@@ -27,7 +27,7 @@ public class Knife4jConfiguration {
     public Docket defaultApi2() {
         Docket docket=new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(new ApiInfoBuilder()
-                        .description("minIO低版本-RESTful APIs")
+                        .description("minIO高版本-RESTful APIs")
                         .termsOfServiceUrl("http://www.xx.com/")
                         .contact("liuurick@gmail.com")
                         .version("1.0")
