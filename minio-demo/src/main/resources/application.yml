@@ -1,0 +1,21 @@
+# MinIO\u5BF9\u8C61\u5B58\u50A8\u76F8\u5173\u914D\u7F6E
+minio:
+  endpoint: http://47.93.91.208:9000/ #MinIO\u670D\u52A1\u6240\u5728\u5730\u5740
+  bucketName: image #\u5B58\u50A8\u6876\u540D\u79F0
+  accessKey: minio #\u8BBF\u95EE\u7684key
+  secretKey: minio1234 #\u8BBF\u95EE\u7684\u79D8\u94A5
+
+spring:
+  servlet:
+    multipart:
+      enabled: true #\u5F00\u542F\u6587\u4EF6\u4E0A\u4F20
+      max-file-size: 10MB #\u9650\u5236\u6587\u4EF6\u4E0A\u4F20\u5927\u5C0F\u4E3A10M
+
+minio-demo:
+  jwt:
+    # \u79D8\u94A5
+    secret: abc123456
+    # \u8FC7\u671F\u65F6\u95F4
+    expire: 5
+    # \u7F13\u5B58\u65F6\u95F4
+    cache-expire: 10
